@@ -29,7 +29,7 @@ export default new Vuex.Store({
   },
   actions: {
     login({ commit }, user) {
-      return new Promise((resolve, reject) => {
+      return new Promise(resolve => {
         commit("auth_request");
         // axios({ url: "http://localhost:3000/login", data: user, method: "POST" })
         //     .then((resp) => {
